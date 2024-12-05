@@ -1,0 +1,45 @@
+html{
+font-family: papyrus;
+
+}
+.header {
+
+    display: flex;
+    justify-content: center;
+}
+
+.pokebola{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.center-text{
+
+    display: flex;
+    justify-content: space-evenly;
+   flex-direction: row;
+}
+
+.pokemon-name{
+
+    border:1px solid black;
+    padding: 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+.go-pokemon p{
+
+    border:1px solid black;
+    padding: 0 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.go-pokemon {
+    display: flex;
+
+}
