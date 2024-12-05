@@ -103,7 +103,7 @@ font-family: papyrus;
     width: 194px;
     border-radius: 16px;
     transition: border-color 0.5s ease;
-   }
+   }    
    .pokemon-charizard:hover {
     border-color: blue;
    }
