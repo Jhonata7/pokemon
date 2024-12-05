@@ -1,132 +1,57 @@
-html{
-font-family: papyrus;
-
-}
-.header {
-
+header{
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+.search-name{
+
+    background: purple;
+    color: white;
+    display: flex
+;
+    flex-direction: row;
+    max-width: 600px;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.pokebola{
-    margin-top: 2%;
-    display: flex;
-    justify-content: center;
-}
-
-
-.center-text{
-
-    display: flex;
-    justify-content: space-evenly;
-   flex-direction: row;
-}
-
-.pokemon-name{
-
-    border:1px solid black;
-    padding: 0 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 10px;
-}
-
-.go-pokemon p{
-
-    border:1px solid black;
-    padding: 0 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 10px;
-    margin: 10px;
-}
-
-.go-pokemon {
-    display: flex;
-
-}
-
-.pokemon-alakazan{
-    border: solid black 3px;
-    width: 194px;
-    border-radius: 16px;
-    transition: border-color 0.5s ease;
-   }
-
-   .pokemon-alakazan:hover {
-    border-color: blue;
-   }
-
-   .pokemon-charmander{
-    border: solid rgb(235, 39, 39) 3px;
-    width: 194px;
-    border-radius: 16px;
-    transition: border-color 0.5s ease;
-   }
-
-   .pokemon-charmander:hover {
-    border-color: blue;
-   }
-
-
-   .pokemon-pikachu{
-    border: solid rgb(245, 237, 14) 3px;
-    width: 194px;
-    border-radius: 16px;
-    transition: border-color 0.5s ease;
-   }
-
-   .pokemon-pikachu:hover {
-    border-color: blue;
-   }
-
-   .pokemon-squirtlle{
-    border: solid rgb(73, 187, 249) 3px;
-    width: 194px;
-    border-radius: 16px;
-    transition: border-color 0.5s ease;
-   }
-   .pokemon-squirtlle:hover {
-    border-color: blue;
-   }
-
-   .pokemon-bulbasaur{
-    border: solid rgb(10, 238, 13) 3px;
-    width: 194px;
-    border-radius: 16px;
-    transition: border-color 0.5s ease;
-   }
-   .pokemon-bulbasaur:hover {
-    border-color: blue;
-   }
-
-   .pokemon-charizard{
-    border: solid rgb(224, 54, 16) 3px;
-    width: 194px;
-    border-radius: 16px;
-    transition: border-color 0.5s ease;
-   }    
-   .pokemon-charizard:hover {
-    border-color: blue;
-   }
-
-   .pokemon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.pokemon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     margin: 20px;
 }
 
 .pokemon {
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 2px solid #ddd;
     padding: 10px;
-    width: 150px;
     text-align: center;
     background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .pokemon img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.pokemon p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    .pokemon-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon-container {
+        grid-template-columns: 1fr;
+    }
 }
