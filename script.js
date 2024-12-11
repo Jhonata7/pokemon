@@ -1,5 +1,5 @@
 // Executa a função automaticamente ao carregar a página
-document.addEventListener("DOMContentLoaded", loadRandomPokemon);
+// document.addEventListener("DOMContentLoaded", loadRandomPokemon);
 document.getElementById("load-pokemon").addEventListener("click", loadRandomPokemon);
 
 async function loadRandomPokemon() {
